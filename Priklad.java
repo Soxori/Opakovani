@@ -21,8 +21,8 @@ public class Priklad {
 
         for (int i = 1; i <= 100; i++) {
             int x = 0;
-            for (int num = i; num >= 1; num--) {
-                if (i % num == 0) {
+            for (int number = i; number >= 1; number--) {
+                if (i % number == 0) {
                     x++;
                 }
             }
