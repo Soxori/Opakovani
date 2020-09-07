@@ -10,24 +10,24 @@ public class Priklad {
         System.out.println("zadej cislo");
         cislo = sc.nextInt();
 
-        
-
         if(cislo % 7 == 0) {
         System.out.println("cislo je delitelne 7");
         }
         else {
         System.out.println("cislo neni delitelne 7");
         }
-    }
     
-    public static void prvocisla() {
+    
 
-        for(int i = 0; i <= 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             int x = 0;
-
-            for(int cislo = i; cislo >= 1; cislo--){
-                if( i % cislo == 0);
-                x++;
+            for (int num = i; num >= 1; num--) {
+                if (i % num == 0) {
+                    x++;
+                }
+            }
+            if (x == 2) {
+                System.out.println(i);
             }
         }
     }
